@@ -72,13 +72,13 @@
                                 <td>{{ve.fecha}}</td>
                                 <td>{{ve.medio_pago}}</td>
                                 <td>{{ve.cliente}}</td>
-                                <td><a href="{url 'form_mod_producto' ve.id_venta %">Modificar</a></td>
-                                <td><a href="{url 'form_del_producto' ve.id_venta %">Eliminar</a></td>
+                                <td><a href="{& url 'form_mod_producto' ve.id_venta %}">Modificar</a></td>
+                                <td><a href="{& url 'form_del_producto' ve.id_venta %}">Eliminar</a></td>
                             </tr>
                             {% endfor %}
                         </tbody>
                     </table>
-                    <a href="{url 'form_venta'%}">Agrega nueva Venta</a>
+                    <a href="{% url 'form_venta' %}">Agrega nueva Venta</a>
                     <br></br>
                 </div>
             </div>

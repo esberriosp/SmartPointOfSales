@@ -72,13 +72,13 @@
                                 <td>{{cli.apellidos}}</td>
                                 <td>{{cli.correo}}</td>
                                 <td>{{cli.direccion}}</td>
-                                <td><a href="{url 'form_mod_cliente' cli.id_cliente %">Modificar</a></td>
-                                <td><a href="{url 'form_del_cliente' cli.id_cliente %">Eliminar</a></td>
+                                <td><a href="{% url 'form_mod_cliente' cli.id_cliente %}">Modificar</a></td>
+                                <td><a href="{% url 'form_del_cliente' cli.id_cliente %}">Eliminar</a></td>
                             </tr>
                             {% endfor %}
                         </tbody>
                     </table>
-                    <a href="{url 'form_cliente'%}">Agrega nuevo Cliente</a>
+                    <a href="{% url 'form_cliente' %}">Agrega nuevo Cliente</a>
                     <br></br>
                 </div>
             </div>

@@ -68,13 +68,13 @@
                                 <td>{{de.id_detalle_venta}}</td>
                                 <td>{{de.producto}}</td>
                                 <td>{{de.venta}}</td>
-                                <td><a href="{url 'form_mod_detalleVenta' de.id_detalle_venta %">Modificar</a></td>
-                                <td><a href="{url 'form_del_detalleVenta' de.id_detalle_venta %">Eliminar</a></td>
+                                <td><a href="{% url 'form_mod_detalleVenta' de.id_detalle_venta %}">Modificar</a></td>
+                                <td><a href="{% url 'form_del_detalleVenta' de.id_detalle_venta %}">Eliminar</a></td>
                             </tr>
                             {% endfor %}
                         </tbody>
                     </table>
-                    <a href="{url 'form_detalleVenta'%}">Agrega nuevo Detalle de Venta</a>
+                    <a href="{% url 'form_detalleVenta' %}">Agrega nuevo Detalle de Venta</a>
                     <br></br>
                 </div>
             </div>

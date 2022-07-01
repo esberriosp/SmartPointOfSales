@@ -66,13 +66,13 @@
                             <tr>
                                 <td>{{mp.id_medio_pago}}</td>
                                 <td>{{mp.nom_med_pago}}</td>
-                                <td><a href="{url 'form_mod_medioPago' mp.id_medio_pago %">Modificar</a></td>
-                                <td><a href="{url 'form_del_medioPago' mp.id_medio_pago %">Eliminar</a></td>
+                                <td><a href="{% url 'form_mod_medioPago' mp.id_medio_pago %}">Modificar</a></td>
+                                <td><a href="{% url 'form_del_medioPago' mp.id_medio_pago %}">Eliminar</a></td>
                             </tr>
                             {% endfor %}
                         </tbody>
                     </table>
-                    <a href="{url 'form_medioPago'%}">Agrega nuevo Medio de Pago</a>
+                    <a href="{% url 'form_medioPago' %}">Agrega nuevo Medio de Pago</a>
                     <br></br>
                 </div>
             </div>

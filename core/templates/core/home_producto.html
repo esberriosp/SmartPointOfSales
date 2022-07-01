@@ -70,13 +70,13 @@
                                 <td>{{pr.nom_producto}}</td>
                                 <td>{{pr.descripcion}}</td>
                                 <td>{{pr.precio}}</td>
-                                <td><a href="{url 'form_mod_producto' pr.id_producto %">Modificar</a></td>
-                                <td><a href="{url 'form_del_producto' pr.id_producto %">Eliminar</a></td>
+                                <td><a href="{% url 'form_mod_producto' pr.id_producto %}">Modificar</a></td>
+                                <td><a href="{% url 'form_del_producto' pr.id_producto %}">Eliminar</a></td>
                             </tr>
                             {% endfor %}
                         </tbody>
                     </table>
-                    <a href="{url 'form_producto'%}">Agrega nuevo Producto</a>
+                    <a href="{% url 'form_producto' %}">Agrega nuevo Producto</a>
                     <br></br>
                 </div>
             </div>
