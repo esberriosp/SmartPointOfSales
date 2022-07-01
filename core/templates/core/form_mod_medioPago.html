@@ -56,16 +56,15 @@
                     <form method="post" action="" id="formulario">
                         {% csrf_token %}
                         <div class="form-group">
-                            {{ form.as_table}}
+                            {{ form.as_p}}
                         </div>
 
-                        <imput type="submit" class="btn btn-danger" id="enviar" value="Modificar"></imput>
-                        <imput type="reset" class="btn btn-primary" id="limpiar" value="Limpiar"></imput>
-                        <div id="error" class="alert alert-danger" role="alert"></div>
+                        <input type="submit" class="btn btn-danger" id="enviar" value="Modificar">
+                        <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+                        <a href="{% url 'home_medioPago' %}" class="btn btn-info" role="button">Volver</a>
+                        <div id="error" class="alert alert-danger" roles="alert"></div>
                     </form>
-                    <div class="alert alert-sucess" role="alert">
-                        {{mensaje}}
-                    </div>
+                    <div id="error" class="alert alert-success" roles="alert">{{mensaje}}</div>
                 </div>
             </div>
         </div>
