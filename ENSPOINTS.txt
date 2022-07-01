@@ -1,0 +1,104 @@
+API CLIENTES:
+http://127.0.0.1:8000/v1/apiClientes/lista_clientes
+
+[
+    {
+	"id_cliente": 1,
+        "nombre": "Esteban",
+        "apellidos": "Berrios",
+        "correo": "bearsgrafica@gmail.com",
+        "direccion": "Simon Reyes 1572"
+    },
+    {
+	"id_cliente": 2,
+        "nombre": "Sonia",
+        "apellidos": "Pena",
+        "correo": "soniapv@gmail.com",
+        "direccion": "Quince Poniente 8131"
+    },
+    {
+	"id_cliente": 3,
+        "nombre": "Manuel",
+        "apellidos": "Barrios",
+        "correo": "barrioskk@gmail.com",
+        "direccion": "Quintero 029"
+    },
+    {
+	"id_cliente": 4,
+        "nombre": "Marla",
+        "apellidos": "Sepulveda",
+        "correo": "marla.sepulvedarmijo@gmail.com",
+        "direccion": "Colombia 7771"
+    },
+    {
+	"id_cliente": 5,
+        "nombre": "Mauricio",
+        "apellidos": "Berrios",
+        "correo": "na@na.com",
+        "direccion": "Colombia 7771"
+    }
+]
+
+API PRODUCTOS:
+http://127.0.0.1:8000/v1/apiProductos/lista_productos
+
+[
+    {
+	"id_producto": 1,
+        "nom_producto": "Pan",
+        "descripcion": "Hallulla o marraqueta unidad",
+        "precio": 100
+    },
+    {
+	"id_producto": 2,
+        "nom_producto": "Arroz Superior",
+        "descripcion": "Arroz grado 2 contenido neto 1KG.",
+        "precio": 2100
+    },
+    {
+	"id_producto": 3,
+        "nom_producto": "Azucar",
+        "descripcion": "Azucar Iansa 1KG",
+        "precio": 1200
+    },
+    {
+	"id_producto": 4,
+        "nom_producto": "Aceite",
+        "descripcion": "Aceite CHEF Maravilla 1LT.",
+        "precio": 3100
+    },
+    {
+	"id_producto": 5,
+        "nom_producto": "Galleta",
+        "descripcion": "Criollitas Mckay 100 grs",
+        "precio": 1590
+    },
+    
+]
+
+API MEDIO DE PAGO:
+http://127.0.0.1:8000/v1/apiVentas/lista_mediosDePago
+
+[
+    {
+	"id_medio_pago": 1,
+        "nom_med_pago": "Efectivo"
+    },
+    {
+	"id_medio_pago": 2,
+        "nom_med_pago": "Transferencia bancaria"
+    },
+    {
+	"id_medio_pago": 3,
+        "nom_med_pago": "Tarjeta debito"
+    },
+    {
+	"id_medio_pago": 4,
+        "nom_med_pago": "Tarjeta credito"
+    },
+    {
+	"id_medio_pago": 5,
+        "nom_med_pago": "Abono"
+    }
+]
+
