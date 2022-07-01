@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../core/home.html">PORTAL</a>
+            <a class="navbar-brand" href="{% url 'home' %}">PORTAL</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,22 +24,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../core/home.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../core/home_cliente.html">Clientes</a>
+                        <a class="nav-link" href="{% url 'home_cliente' %}">Clientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../core/home_producto.html">Productos</a>
+                        <a class="nav-link" href="{% url 'home_producto' %}">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../core/home_medioPago.html">Medios de Pago</a>
+                        <a class="nav-link" href="{% url 'home_medioPago' %}">Medios de Pago</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../core/home_venta.html">Venta</a>
+                        <a class="nav-link" href="{% url 'home_venta' %}">Venta</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../core/home_detalleVenta.html">Detalle de Venta</a>
+                        <a class="nav-link" href="{% url 'home_detalleVenta' %}">Detalle de Venta</a>
                     </li>
                 </ul>
             </div>
