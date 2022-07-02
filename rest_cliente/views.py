@@ -10,8 +10,8 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 # Create your views here.
 @csrf_exempt
-@api_view(['GET','POST'])
 @permission_classes((IsAuthenticated,))
+@api_view(['GET','POST'])
 def lista_clientes(request):
     if request.method == 'GET':
         cliente = Cliente.objects.all()
@@ -27,8 +27,8 @@ def lista_clientes(request):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 #---------
-api_view(['GET','PUT','DELETE'])
 @permission_classes((IsAuthenticated,))
+@api_view(['GET','PUT','DELETE'])
 def detalle_cliente(request,id):
     try:
         cliente = Cliente.objects.get(id_cliente=id)

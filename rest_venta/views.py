@@ -11,8 +11,8 @@ from rest_framework.permissions import IsAuthenticated
 
 # Create your views here.
 @csrf_exempt
-@api_view(['GET','POST'])
 @permission_classes((IsAuthenticated,))
+@api_view(['GET','POST'])
 def lista_ventas(request):
     if request.method == 'GET':
         venta = Venta.objects.all()
@@ -28,8 +28,8 @@ def lista_ventas(request):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @csrf_exempt
-@api_view(['GET','POST'])
 @permission_classes((IsAuthenticated,))
+@api_view(['GET','POST'])
 def lista_mediosDePago(request):
     if request.method == 'GET':
         medioPago = MedioPago.objects.all()
@@ -45,8 +45,8 @@ def lista_mediosDePago(request):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @csrf_exempt
-@api_view(['GET','POST'])
 @permission_classes((IsAuthenticated,))
+@api_view(['GET','POST'])
 def lista_detalleVenta(request):
     if request.method == 'GET':
         detalleVenta = DetalleVenta.objects.all()
@@ -63,8 +63,8 @@ def lista_detalleVenta(request):
 
 #-----------------------
 @csrf_exempt
-@api_view(['GET','PUT','DELETE'])
 @permission_classes((IsAuthenticated,))
+@api_view(['GET','PUT','DELETE'])
 def detalle_venta(request,id):
     try:
         venta = Venta.objects.get(id_venta=id)
@@ -86,8 +86,8 @@ def detalle_venta(request,id):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 @csrf_exempt
-@api_view(['GET','PUT','DELETE'])
 @permission_classes((IsAuthenticated,))
+@api_view(['GET','PUT','DELETE'])
 def detalle_medioDePago(request,id):
     try:
         medioDePago = MedioPago.objects.get(id_medio_pago=id)
@@ -109,8 +109,8 @@ def detalle_medioDePago(request,id):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 @csrf_exempt
-@api_view(['GET','PUT','DELETE'])
 @permission_classes((IsAuthenticated,))
+@api_view(['GET','PUT','DELETE'])
 def detalle_detalleVenta(request,id):
     try:
         detalleVenta = DetalleVenta.objects.get(id_detalle_venta=id)
