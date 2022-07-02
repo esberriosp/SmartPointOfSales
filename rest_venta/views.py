@@ -9,7 +9,7 @@ from .serializers import VentaSerializer, MedioPagoSerializer, DetalleVentaSeria
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
-# Create your views here.
+# Create your views here.LISTO
 @csrf_exempt
 @api_view(['GET','POST'])
 @permission_classes((IsAuthenticated,))
